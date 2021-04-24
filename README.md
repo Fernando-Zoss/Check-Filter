@@ -2,7 +2,7 @@
 
  ![CheckFilter](CheckFilter.jpg "CheckFilter.jpg")
 
-#### Resumo
+### Resumo
 Acompanhando a expansão das redes computacionais, as tecnologias
 de segurança são indispensáveis na protecão das informações e recursos de
 *hardware* nas redes privadas. Uma técnica segura, estável e eficaz disponível
@@ -13,7 +13,7 @@ centrado no usuário para configuração, identificou-se a possibilidade de
 desenvolver uma interface gráfica que auxilie a configuração das regras otimizando
 o tempo de sua implantacão e melhorando seu gerenciamento.
 
-#### Introdução
+### Introdução
 Atualmente, na rede mundial de computadores, existem incontáveis processos em andamento
 que são sigilosos, ou seja, somente a origem e o destino destes dados e informacões
 devem ter conhecimento de seu conteúdo, no entanto, para que tais dados sejam protegidos
@@ -39,12 +39,12 @@ que atuarão no controle automático do tráfego da rede. Por meio de uma uma _i
 simples, amigável e intuitiva, esta apresentará opções de configuração dinâmica e objetiva,
 reduzindo assim o tempo de configuração de um _firewall iptables_.
 
-**1. Fundamentação Teórica**
+### **1. Fundamentação Teórica**
 
 Apresentam conceitos de autores sobre termos essenciais para o entendimento e 
 desenvolvimento do trabalho.
 
-**1.1 *Firewall***
+### **1.1 *Firewall***
 
 Um firewall para Chapman at al. (1995), consiste em um componente ou um conjunto de
 componentes que restringem o acesso de uma rede protegida e a internet, ou entre outros
@@ -52,7 +52,7 @@ conjuntos de rede.
 Para Cheswick et al.(2005), *firewall* é qualquer equipamento ou software que limita
 o acesso à rede.
 
-**1.1 Filtro de Pacote**
+### **1.2 Filtro de Pacote**
 
 Para autor Chapman (1992), um filtro de pacotes é um processo que atua no 
 bloqueio ou liberação de pacotes de dados pela *interface* da rede, utilizando
@@ -79,14 +79,14 @@ com a configuração, serão bloqueados.
 ![fluxo](rede.png "proceso de filtragem de pacotes")
 
 
-**1.2 *IPtables***
+### **1.2 *IPtables***
 
 O autor Purdy (2004) define o *iptables* como um utilitário de linha de comando fortemente
 acoplado ao sub-sistema de filtragem de pacotes, disponível no *Kernel* dos sistemas
 *GNU/Linux* com versões 2.4 e superiores, um conjunto de ferramentas nativo denominado
 *Netfilter*.
 
-**2. Tecnologias**
+### **2. Tecnologias**
 
 Nesta seção são conceituadas as tecnologias escolhidas para a codificação da *interface*
 *Check Filter* que impacta diretamente em sua arquitetura e componentes gráficos empregados,
@@ -94,7 +94,7 @@ pois devem dar suporte para configuração de regras que foram selecionadas para
 configuração no ambiente gráfico.
 
 
-**2.1 *Netfilter***
+### **2.1 *Netfilter***
 
 O *Kernel* do *Linux* é o núcleo do sistema operacional *GNU/Linux*, que serve de base
 para o desenvolvimento, execução de outros programas e controle de *hardware*. Portanto,
@@ -105,38 +105,38 @@ possui um sub-sistema que permite a configuração das tabelas de *firewall*, de
 *Filter*, *NAT* e *Meangle*. Estas tabelas organizam as cadeias de regras de acordo
 com sua estrutura e determinam a quais pacotes as regras serão aplicadas.
 
-**2.2 *Apache***
+### **2.2 *Apache***
 
 O Apache2 é um servidor *Web* livre e extremamente difundido entre os usuários
 *Linux*, e distribuído pela licença *GNU*. Seu código-fonte pode ser estudado e modificado
 por qualquer pessoa. Atualmente é o servidor *Web* mais utilizado no mundo.
 
-**2.3 *PHP***
+### **2.3 *PHP***
 
 PHP3 é acrônimo recursivo para *Hypertext* Preprocessor. É uma linguagem *open source*
 amplamente utilizada para desenvolvimento *Web*, pois pode ser embutida dentro do
 *HTML*.
 
-**2.4 *HTML***
+### **2.4 *HTML***
 
 HTML4 é a sigla para *HyperText Markup Language*. Consiste em uma linguagem de
 marcação de texto utilizada na produção de páginas *Web*. Basicamente, trata-se de um
 conjunto de *tags* que servem para definir a forma que o texto será exibido e outros elementos
 da página *HTML*.
 
-**2.5 *CSS***
+### **2.5 *CSS***
 
 *Cascading Style Sheets5* ´e uma linguagem utilizada para definir a apresentação de documentos
 que adotem em seu desenvolvimento, linguagem de marcação como o *HTML*.
 Sua maior vantagem é separar o formato e o conteúdo de um documento, fazendo uso em
 conjunto do *HTML* e *CSS*.
 
-**2.6 *Bootstrap Studio***
+### **2.6 *Bootstrap Studio***
 
 O Bootstrap Studio6 é um editor com ferramentas visuais para criação de páginas e *sites*
 responsivos. Possui um grande número de componentes internos, de fácil manipulação.
 
-**4. Metodologia**
+### **4. Metodologia**
 
 Alguns *dashboards* foram desenhados e analisados a fim de encontrar uma abordagem gráfica para ser empregada na arquitetura da *interface* e que cumprise o objetivo geral e específicos iniciais.
 Optou-se então por aplicar um modelo que utilizasse a lágica estrutural da arquitetura
@@ -160,7 +160,7 @@ Optou-se então por desenvolver uma *interface* local *host* utilizando o servid
 principalmente, por sua capacidade de executar códigos em *PHP* e pelo seu alto nível de
 confiabilidade em troca de informações entre cliente e servidor.
 A linguagem de programação *PHP* foi escolhida, principalmente, devido à função
-*exec()* que irá executar o código externo ao ambiente gráfico, utilizado pelo administrador
+```exec()``` que irá executar o código externo ao ambiente gráfico, utilizado pelo administrador
 da rede. O código correspondente à combinação de componentes da *interface* gráfica
 será executado no *shell* do *Linux* por meio do *iptables*, agregando a regra especificada às
 *chains* das tabelas do *Netfilter*.
@@ -171,3 +171,11 @@ código do projeto em um arquivo *HTML*.
 O *HTML* e o *CSS* permitiram toda a alteração necessária após a importação da
 estrutura gráfica construída no *Bootstrap* seja na alteração da estrutura ou no estilo da
 *interface*.
+### **5. Plataforma Proposta**
+
+Empregando o uso das ferramentas mencionadas, este trabalho tem por finalidade oferecer
+um método alternativo na inserção das regras em um ambiente gráfico que realize
+a comunicação entre usuário-máquina, aplicando conhecimentos da Interacão Humano-
+Computador, tendo como foco o usuário. Portanto, trata-se de um *front-end* externo aos
+recursos nativos do *Linux*, mas capaz de simplificar o método nativo de implementação
+de regras de pacotes.
