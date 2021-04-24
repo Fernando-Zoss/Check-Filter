@@ -51,10 +51,9 @@ componentes que restringem o acesso de uma rede protegida e a internet, ou entre
 conjuntos de rede.
 Para Cheswick et al.(2005), *firewall* é qualquer equipamento ou software que limita
 o acesso à rede.
-
 ### **1.2 Filtro de Pacote**
 
-Para autor Chapman (1992), um filtro de pacotes é um processo que atua no 
+Para autor >Chapman (1992), um filtro de pacotes é um processo que atua no 
 bloqueio ou liberação de pacotes de dados pela *interface* da rede, utilizando
 um conjunto de regras de filtragem pré-configuradas e a anélise é feita nas 
 informações contidas no cabeçalho de cada pacote individualmente.
@@ -179,3 +178,31 @@ a comunicação entre usuário-máquina, aplicando conhecimentos da Interacão H
 Computador, tendo como foco o usuário. Portanto, trata-se de um *front-end* externo aos
 recursos nativos do *Linux*, mas capaz de simplificar o método nativo de implementação
 de regras de pacotes.
+
+### **6. Resultados e Discussão**
+
+A interface gráfica desenvolvida é o produto da interação de diferentes tecnologias difundidas
+e utilizadas em diferentes tipos de projetos. O estudo da ferramenta *Netfilter*
+foi de vital importância, pois o conhecimento sobre sua organização, aplicabilidades e
+funcionamento são a base fundamental do protótipo que foi projetado.
+Seguindo a arquitetura *Netfilter* projetou-se então toda a estrutura da ferramenta
+*Check Filter*, dividida em *interface home*, *filter*, *nat*, *mangle* e consulta.
+Na *interface home*, Figura 3, é possível identificar facilmente essa organização,
+que de forma intuitiva indica ao administrador de rede onde encontram-se as funcionalidades
+pertinentes de cada tabela. Na parte superior há um menu bar de fácil acesso para
+navegação entre todas as *interfaces* da ferramenta *Check Filter*, este componente está presente
+em todas as *interfaces*.
+
+    Figura 3. Interface home
+
+ ![filter](home.png "tela home")
+
+ Essa organização foi definida e implementada porque evita erros de configuração
+de parâmetros, de regras que podem ocorrer quando utilizado o método de configuração
+via *shell script*. Tais erros são minimizados quando sua configuração realiza-se pela *interface*
+gráfica desenvolvida.
+
+ ![filter](filter.png "tabela filter")
+ ![nat](nat.png "tabela nat")
+ ![mangle](filter.png "tabela mangle")
+ ![consulta](consultar.png "tala de consulta")
