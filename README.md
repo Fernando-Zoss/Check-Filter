@@ -55,8 +55,12 @@
     À princípio, a filtragem de pacotes, atua nas camadas de rede e transporte, segundo o
     modelo *OSI*.
     A Figura 1 exemplifica, de forma global, como o filtro de pacotes atuará na rede.
-    Todo o tráfego de pacotes que circular na rede interna será verificado pelas *chains* configuradas pelo administrador em um *host*. Os pacotes oriundos da rede externa serão analisados pelos filtros e, de acordo com as regras implementadas, caso atendam ás condições de
-    configuração, chegarão ao *IP* de destino. Caso os pacotes não estejam em conformidade com a configuraçãp, serão bloqueados.
+    Todo o tráfego de pacotes que circular na rede interna será verificado pelas *chains* 
+    configuradas pelo administrador em um *host*. 
+    Os pacotes oriundos da rede externa serão analisados pelos filtros e, de acordo 
+    com as regras implementadas, caso atendam ás condições
+    de configuração, chegarão ao *IP* de destino. Caso os pacotes não estejam em conformidade
+    com a configuração, serão bloqueados.
 
     Figura 1. Visão global do processo de filtragem de pacotes.
 
