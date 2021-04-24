@@ -205,7 +205,7 @@ em todas as *interfaces*.
 
     Figura 3. Interface home
 
- ![filter](home.png "tela home")
+ ![home](home.PNG "tela home")
 
 Essa organização foi definida e implementada porque evita erros de configuração
 de parâmetros, de regras que podem ocorrer quando utilizado o método de configuração
@@ -241,7 +241,7 @@ os seguintes modos de configuração:
 
         Figura 5. Interface NAT
 
- ![nat](nat.png "tabela nat")
+ ![nat](nat.PNG "tabela nat")
 
  Para a configuração da *interface mangle*, Figura 6, foi disponibilizado o
 otimização de tempo de serviços (*TOS*) de entrada e de saída basta a especificação dos
@@ -249,7 +249,7 @@ parâmetros, como o tipo de protocolo que se deseja priorizar na rede.
 
         Figura 6. Interface Mangle
 
- ![mangle](mangle.png "tabela mangle")
+ ![mangle](mangle.PNG "tabela mangle")
 
  A necessidade da *interface* de consulta, Figura 7, ocorreu na fase de testes da
 *interface filter* pois após a criação de regras pela plataforma *Check Filter* havia a necessidade
