@@ -1,7 +1,4 @@
 # Interface Gráfica Auxiliar na Configuração de Filtros de Pacotes em um Ambiente Linux
-
- ![CheckFilter](CheckFilter.jpg "CheckFilter.jpg")
-
 ### Resumo
 Acompanhando a expansão das redes computacionais, as tecnologias
 de segurança são indispensáveis na protecão das informações e recursos de
@@ -294,3 +291,22 @@ para configuração de filtro de pacotes.
 Para trabalhos futuros, pretende-se agregar outras opções de configuração *iptables*
 na *interface* gráfica, bem como novas atualizações que possam ser lançadas, tornando a
 ferramenta mais completa.
+
+---
+
+### Referências
+
+Basile, C. and Lioy, A. (2015). *Analysis of application-layer filtering policies with application*
+*to http. IEEE/ACM Transactions on Networking (TON)*, 23(1):28–41.
+Chapman, D. B. (1992). *Network (in) security through ip packet filtering*. *In USENIX*
+*Summer*.
+Chapman, D. B., Zwicky, E. D., *and* Russell, D. (1995). *Building internet firewalls*.
+O’Reilly & Associates, Inc.
+Cheswick, W. R., Bellovin, S. M., and Rubin, A. D. (2005). *Firewalls* e segurança na
+Internet. Bookman.
+FURMANKIEWICZ, E. and FIGUEIREDO, J. (2000). Seguranc¸a máxima o guia de um
+*hacker* para proteger seu site na internet e sua rede. Rio de Janeiro: Campus.
+Purdy, G. N. (2004). *Linux iptables Pocket Reference: Firewalls, NAT & Accounting*.
+”O’Reilly Media, Inc.”.
+Silva, L. R. d. (2013). Estudo comparativo de soluções de *firewalls: Netfilter/iptables* e
+*cisco asa*.
