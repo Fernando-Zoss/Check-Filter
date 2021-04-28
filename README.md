@@ -19,47 +19,47 @@ desenvolver uma interface gráfica que auxilie a configuração das regras otimi
 o tempo de sua implantacão e melhorando seu gerenciamento.
 
 ---
-1. **Introdução**
+1. **Introdução**<p>
 Atualmente, na rede mundial de computadores, existem incontáveis processos em andamento
 que são sigilosos, ou seja, somente a origem e o destino destes dados e informacões
 devem ter conhecimento de seu conteúdo, no entanto, para que tais dados sejam protegidos
 torna-se imprescindível a aplicação de métodos e tecnologias flexíveis, versáteis e
 que tornem as redes privadas mais seguras contra ataques de _crackers_ oriundos da rede
 externa.
-    O componente de filtragem de pacotes tem por função analisar todos os pacotes
+O componente de filtragem de pacotes tem por função analisar todos os pacotes
 que trafegam na rede por meio de regras previamente configuradas, corrigindo e/ou
 minimizando vulnerabilidades existentes, proporciona maior flexibilidade e controle ao
 administrador, é extremamente útil em situações simples de segurança visto que atua no
 bloqueio global de tipos específicos de pacotes que trafegam entre redes e no bloqueio
 de serviços. Sua implantaçao é de baixo custo, causa pouco impacto no desempenho,
 fornece controle de acesso e serviços para toda a rede.
-    Acoplado ao Kernel dos Sistemas Operacionais GNU/Linux com versões 2.4
+Acoplado ao Kernel dos Sistemas Operacionais GNU/Linux com versões 2.4
 ou superiores o subsistema de filtro de pacotes nativo denominado _Netfilter_ permite a
 configuração de regras que atuarão no bloqueio ou liberação de tráfego de pacotes na rede,
 e, para executá-las corretamente, requer conhecimento técnico e experiência de quem as
 configura, pois podem ocorrer diversos tipos de erros durante a sintaxe das regras que
 seguem uma lógica e uma padronização.
-    Tomado o conhecimento destes parâmetros identificou-se a possibilidade de desenvolver
+Tomado o conhecimento destes parâmetros identificou-se a possibilidade de desenvolver
 uma aplicacão _localhost_ que auxilie na configuração e na aplicação dos filtros
 que atuarão no controle automático do tráfego da rede. Por meio de uma uma _interface_
 simples, amigável e intuitiva, esta apresentará opções de configuração dinâmica e objetiva,
 reduzindo assim o tempo de configuração de um _firewall iptables_.
 
 ---
-2. **Fundamentação Teórica**
+2. **Fundamentação Teórica**<p>
 Apresentam conceitos de autores sobre termos essenciais para o entendimento e 
-desenvolvimento do trabalho.
+desenvolvimento do trabalho.<p>
 2.1. ***Firewall***
 Um firewall para Chapman at al. (1995), consiste em um componente ou um conjunto de
 componentes que restringem o acesso de uma rede protegida e a internet, ou entre outros
 conjuntos de rede.
 Para Cheswick et al.(2005), *firewall* é qualquer equipamento ou software que limita
-o acesso à rede.
+o acesso à rede.<p>
 2.2 ***IPtables***
 O autor Purdy (2004) define o *iptables* como um utilitário de linha de comando fortemente
 acoplado ao sub-sistema de filtragem de pacotes, disponível no *Kernel* dos sistemas
 *GNU/Linux* com versões 2.4 e superiores, um conjunto de ferramentas nativo denominado
-*Netfilter*.
+*Netfilter*.<p>
 2.3 **Filtro de Pacotes**
 Para autor Chapman (1992), um filtro de pacotes é um processo que atua no 
 bloqueio ou liberação de pacotes de dados pela *interface* da rede, utilizando
@@ -87,11 +87,11 @@ com a configuração, serão bloqueados.<p>
 
 ---
 
-3. **Tecnologias**
+3. **Tecnologias**<p>
 Nesta seção são conceituadas as tecnologias escolhidas para a codificação da *interface*
 *Check Filter* que impacta diretamente em sua arquitetura e componentes gráficos empregados,
 pois devem dar suporte para configuração de regras que foram selecionadas para
-configuração no ambiente gráfico.
+configuração no ambiente gráfico.<p>
 3.1 ***Netfilter***
 O *Kernel* do *Linux* é o núcleo do sistema operacional *GNU/Linux*, que serve de base
 para o desenvolvimento, execução de outros programas e controle de *hardware*. Portanto,
@@ -100,25 +100,25 @@ possui um sub-sistema que permite a configuração das tabelas de *firewall*, de
 *Netfilter*.
 Dentro de sua estrutura, existem três tabelas que são importantes para seu funcionamento:
 *Filter*, *NAT* e *Meangle*. Estas tabelas organizam as cadeias de regras de acordo
-com sua estrutura e determinam a quais pacotes as regras serão aplicadas.
+com sua estrutura e determinam a quais pacotes as regras serão aplicadas.<p>
 3.2 ***Apache***
 O Apache2 é um servidor *Web* livre e extremamente difundido entre os usuários
 *Linux*, e distribuído pela licença *GNU*. Seu código-fonte pode ser estudado e modificado
-por qualquer pessoa. Atualmente é o servidor *Web* mais utilizado no mundo.
+por qualquer pessoa. Atualmente é o servidor *Web* mais utilizado no mundo.<p>
 3.3 ***PHP***
 PHP3 é acrônimo recursivo para *Hypertext* Preprocessor. É uma linguagem *open source*
 amplamente utilizada para desenvolvimento *Web*, pois pode ser embutida dentro do
-*HTML*.
+*HTML*.<p>
 3.4 ***HTML***
 HTML4 é a sigla para *HyperText Markup Language*. Consiste em uma linguagem de
 marcação de texto utilizada na produção de páginas *Web*. Basicamente, trata-se de um
 conjunto de *tags* que servem para definir a forma que o texto será exibido e outros elementos
-da página *HTML*.
+da página *HTML*.<p>
 3.5 ***CSS***
 *Cascading Style Sheets5* ´e uma linguagem utilizada para definir a apresentação de documentos
 que adotem em seu desenvolvimento, linguagem de marcação como o *HTML*.
 Sua maior vantagem é separar o formato e o conteúdo de um documento, fazendo uso em
-conjunto do *HTML* e *CSS*.
+conjunto do *HTML* e *CSS*.<p>
 3.6 ***Bootstrap Studio***
 O Bootstrap Studio6 é um editor com ferramentas visuais para criação de páginas e *sites*
 responsivos. Possui um grande número de componentes internos, de fácil manipulação.
@@ -297,9 +297,3 @@ Purdy, G. N. (2004). *Linux iptables Pocket Reference: Firewalls, NAT & Accounti
 
 Silva, L. R. d. (2013). Estudo comparativo de soluções de *firewalls: Netfilter/iptables* e
 *cisco asa*.
-
-1. *Introdução*
-2. Item 2
-    1. Item 1
-   2. Item 2
-3. Item 3
