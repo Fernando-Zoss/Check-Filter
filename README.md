@@ -83,7 +83,7 @@ com a configuração, serão bloqueados.<p>
 
         Figura 1. Visão global do processo de filtragem de pacotes.
 
-![fluxo](rede.png "proceso de filtragem de pacotes")
+![fluxo](rede.PNG "proceso de filtragem de pacotes")
 
 ---
 
@@ -114,7 +114,7 @@ HTML4 é a sigla para *HyperText Markup Language*. Consiste em uma linguagem de
 marcação de texto utilizada na produção de páginas *Web*. Basicamente, trata-se de um
 conjunto de *tags* que servem para definir a forma que o texto será exibido e outros elementos
 da página *HTML*.<p>
-3.5 ***CSS***
+3.5 ***CSS***<p>
 *Cascading Style Sheets5* ´e uma linguagem utilizada para definir a apresentação de documentos
 que adotem em seu desenvolvimento, linguagem de marcação como o *HTML*.
 Sua maior vantagem é separar o formato e o conteúdo de um documento, fazendo uso em
@@ -126,18 +126,13 @@ responsivos. Possui um grande número de componentes internos, de fácil manipul
 ---
 
 4. **Metodologia**<p>
-Alguns *dashboards* foram desenhados e analisados a fim de encontrar uma abordagem gráfica para ser empregada na arquitetura da *interface* e que cumprise o objetivo geral e específicos iniciais.
+Alguns *dashboards* foram desenhados e analisados a fim de encontrar uma abordagem gráfica para ser empregada na arquitetura da *interface* e que cumprise o objetivo geral e específicos iniciais.<p>
 Optou-se então por aplicar um modelo que utilizasse a lágica estrutural da arquitetura
 *Netfilter* que está organizada em trâs tabelas principais *FILTER*, *NAT*, e *MANGLE*.
 Onde cada tabela é responsável por gerenciar regras que são especáficas em cada uma.
 Utilizando esse modelo, a aplicação foi criada seguindo essas divisões: três *interfaces*
 principais que correspondem a cada uma das tabelas *Netfilter* e cada uma destas
-*interfaces* disponibilizam meios de configuração que são específicos de determinada tabela.<p>
-
-        Figura 2. Esquema de interfaces gráficas baseada nas tabelas Netfilter
-
- ![arquitetura](interface.png "arquiterura da interface")
-
+*interfaces* disponibilizam meios de configuração que são específicos de determinada tabela.
 A escolha das tecnologias para criação da *interface* foi um fator determinante
 em seu planejamento, pois deveriam oferecer o suporte necessário para a criação
 da arquitetura escolhida, oferecer componentes gráficos que possibilitassem opções de
@@ -146,19 +141,23 @@ a plataforma *Netfilter* por meio do *iptables*.
 Optou-se então por desenvolver uma *interface* local *host* utilizando o servidor
 *Web Apache* devido as suas funcionalidades e sua compatibilidade com outros recursos e
 principalmente, por sua capacidade de executar códigos em *PHP* e pelo seu alto nível de
-confiabilidade em troca de informações entre cliente e servidor.
-A linguagem de programação *PHP* foi escolhida, principalmente, devido à função
-```exec()``` que irá executar o código externo ao ambiente gráfico, utilizado pelo administrador
+confiabilidade em troca de informações entre cliente e servidor.<p>
+A linguagem de programação *PHP* foi escolhida, principalmente, devido à 
+função ```exec()``` que irá executar o código externo ao ambiente gráfico, utilizado pelo administrador
 da rede. O código correspondente à combinação de componentes da *interface* gráfica
 será executado no *shell* do *Linux* por meio do *iptables*, agregando a regra especificada às
-*chains* das tabelas do *Netfilter*.
+*chains* das tabelas do *Netfilter*.<p>
 O *Bootstrap* possibilitou diferentes testes de *layout* na fase de codificação de telas
 sem que houvesse grande perda de tempo, pois esse *framework* possibilita a visualização
 da *interface* durante o processo de criação e permite exportar todos os componentes e o
-código do projeto em um arquivo *HTML*.
+código do projeto em um arquivo *HTML*.<p>
 O *HTML* e o *CSS* permitiram toda a alteração necessária após a importação da
 estrutura gráfica construída no *Bootstrap* seja na alteração da estrutura ou no estilo da
 *interface*.
+
+
+        Figura 2. Esquema de interfaces gráficas baseada nas tabelas Netfilter
+![arquitetura](arquitetura.PNG "arquiterura da interface")
 
 ---
 5. **Plataforma Proposta**<p>
@@ -215,7 +214,7 @@ Na *interface nat* Figura 5, que realiza a tradução de endereçõs de rede sã
 os seguintes modos de configuração:
 * Alterar a política da tabela;
 * Realizar *SNAT*, tradução de endereços de origem para *ip’s* fixos;
-* Realizar *DNAT*, traduçã de endereços de destino;
+* Realizar *DNAT*, tradução de endereços de destino;
 * Redirecionamento de portas, recurso utilizado para balanço de carga e *proxy* transparente;
 * Mascarar *ip* específico ou de uma rede;
 
@@ -244,13 +243,13 @@ ações foram adicionadas na plataforma:
 Regras salvas são restauradas sempre que o *host* for iniciado, caso contrário serão
 perdidas pois são alocadas em memória apóss sua configuração.
 
-        Figura . Interface de Consulta
+        Figura 7. Interface de Consulta
 
  ![consulta](consultar.png "tela de consulta")
 
  ---
 
-7. **Conclusões e Trabalhos Futuros**
+7. **Conclusões e Trabalhos Futuros**<p>
 O sistema de filtro de pacotes é uma das primeiras ferramentas acionadas quando o tráfego
 de dados é estabelecido entre duas redes diferentes.
 Esse sistema pode ser configurado para filtrar os campos de dados mais úteis,
