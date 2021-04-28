@@ -2,17 +2,17 @@
 
 <h1 align="center"> Interface Gráfica Auxiliar na Configuração de Filtros de Pacotes em um Ambiente Linux </h1>
 
-<img src="https://img.shields.io/static/v1?label=Linux&message= SO&color=brigth&style=plastic&logo=linux"/>
+<img src="https://img.shields.io/static/v1?label=Linux&message=SO&color=brigth&style=plastic&logo=linux"/>
 
-<img src="https://img.shields.io/static/v1?label=Apache&message= v 2.0 &color=orange&style=plastic&logo=apache"/>
+<img src="https://img.shields.io/static/v1?label=Apache&message=v2.0&color=orange&style=plastic&logo=apache"/>
 
-<img src="https://img.shields.io/static/v1?label=PHP&message=v >= 3.0&color=blue&style=plastic&logo=php"/>
+<img src="https://img.shields.io/static/v1?label=PHP&message=v>=3.0&color=blue&style=plastic&logo=php"/>
 
-<img src="https://img.shields.io/static/v1?label=Bootstrap&message=framework &color=blueviolet&style=plastic&logo=bootstrap"/>
+<img src="https://img.shields.io/static/v1?label=Bootstrap&message=framework&color=blueviolet&style=plastic&logo=bootstrap"/>
 
-<img src="https://img.shields.io/static/v1?label=HTML&message= v 5.0 &color=red&style=plastic&logo=html5"/>
+<img src="https://img.shields.io/static/v1?label=HTML&message=v5.0&color=red&style=plastic&logo=html5"/>
 
-<img src="https://img.shields.io/static/v1?label=CSS&message= v 3.0 &color=yellow&style=plastic&logo=css3"/>
+<img src="https://img.shields.io/static/v1?label=CSS&message=v3.0&color=yellow&style=plastic&logo=css3"/>
 <p>
 
 > Status do Projeto: Em desenvolvimento :warning:
