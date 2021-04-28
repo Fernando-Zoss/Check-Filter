@@ -7,8 +7,6 @@
 
 > Status do Projeto: Em desenvolvimento :warning:
 
-
-
 ### Resumo
 Acompanhando a expansão das redes computacionais, as tecnologias
 de segurança são indispensáveis na protecão das informações e recursos de
@@ -21,7 +19,7 @@ desenvolver uma interface gráfica que auxilie a configuração das regras otimi
 o tempo de sua implantacão e melhorando seu gerenciamento.
 
 ---
-### 1. Introdução
+1. **Introdução**
 Atualmente, na rede mundial de computadores, existem incontáveis processos em andamento
 que são sigilosos, ou seja, somente a origem e o destino destes dados e informacões
 devem ter conhecimento de seu conteúdo, no entanto, para que tais dados sejam protegidos
@@ -48,108 +46,86 @@ simples, amigável e intuitiva, esta apresentará opções de configuração din
 reduzindo assim o tempo de configuração de um _firewall iptables_.
 
 ---
-### **2. Fundamentação Teórica**
-
+2. **Fundamentação Teórica**
 Apresentam conceitos de autores sobre termos essenciais para o entendimento e 
 desenvolvimento do trabalho.
-
-### **2.1 *Firewall***
-
+2.1. ***Firewall***
 Um firewall para Chapman at al. (1995), consiste em um componente ou um conjunto de
 componentes que restringem o acesso de uma rede protegida e a internet, ou entre outros
 conjuntos de rede.
 Para Cheswick et al.(2005), *firewall* é qualquer equipamento ou software que limita
 o acesso à rede.
-### **2.2 Filtro de Pacote**
-
-Para autor >Chapman (1992), um filtro de pacotes é um processo que atua no 
-bloqueio ou liberação de pacotes de dados pela *interface* da rede, utilizando
-um conjunto de regras de filtragem pré-configuradas e a anélise é feita nas 
-informações contidas no cabeçalho de cada pacote individualmente.
-    Cheswick e Bellovin (2005) ressaltam que a utilização de um filtro de pacotes é
-uma solucão barata e útil na segurança de redes, pois permite filtrar pacotes com base nos
-endereços de origem ou destino ou nos números de porta.
-    Todos os pacotes que trafegam na rede são analisados um a um e ações serão
-aplicadas nos pacotes que atendam ás restrições dos filtros, os pacotes que não se encaixem
-nas restrições seguirão seu fluxo de processamento normalmente para seu destino.
-    À princípio, a filtragem de pacotes, atua nas camadas de rede e transporte, segundo o
-modelo *OSI*.
-    A Figura 1 exemplifica, de forma global, como o filtro de pacotes atuará na rede.
-    Todo o tráfego de pacotes que circular na rede interna será verificado pelas *chains* 
-configuradas pelo administrador em um *host*. 
-    Os pacotes oriundos da rede externa serão analisados pelos filtros e, de acordo 
-com as regras implementadas, caso atendam ás condições
-de configuração, chegarão ao *IP* de destino. Caso os pacotes não estejam em conformidade
-com a configuração, serão bloqueados.
-
-    Figura 1. Visão global do processo de filtragem de pacotes.
-
-![fluxo](rede.png "proceso de filtragem de pacotes")
-
-
-### **2.3 *IPtables***
-
+2.2 ***IPtables***
 O autor Purdy (2004) define o *iptables* como um utilitário de linha de comando fortemente
 acoplado ao sub-sistema de filtragem de pacotes, disponível no *Kernel* dos sistemas
 *GNU/Linux* com versões 2.4 e superiores, um conjunto de ferramentas nativo denominado
 *Netfilter*.
+2.3 **Filtro de Pacotes**
+Para autor Chapman (1992), um filtro de pacotes é um processo que atua no 
+bloqueio ou liberação de pacotes de dados pela *interface* da rede, utilizando
+um conjunto de regras de filtragem pré-configuradas e a anélise é feita nas 
+informações contidas no cabeçalho de cada pacote individualmente.
+Cheswick e Bellovin (2005) ressaltam que a utilização de um filtro de pacotes é
+uma solucão barata e útil na segurança de redes, pois permite filtrar pacotes com base nos
+endereços de origem ou destino ou nos números de porta.
+Todos os pacotes que trafegam na rede são analisados um a um e ações serão
+aplicadas nos pacotes que atendam ás restrições dos filtros, os pacotes que não se encaixem
+nas restrições seguirão seu fluxo de processamento normalmente para seu destino.
+À princípio, a filtragem de pacotes, atua nas camadas de rede e transporte, segundo o
+modelo *OSI*.
+A Figura 1 exemplifica, de forma global, como o filtro de pacotes atuará na rede.
+Todo o tráfego de pacotes que circular na rede interna será verificado pelas *chains* 
+configuradas pelo administrador em um *host*. 
+Os pacotes oriundos da rede externa serão analisados pelos filtros e, de acordo 
+com as regras implementadas, caso atendam ás condições
+de configuração, chegarão ao *IP* de destino. Caso os pacotes não estejam em conformidade
+com a configuração, serão bloqueados.<p>
+
+        Figura 1. Visão global do processo de filtragem de pacotes.
+
+![fluxo](rede.png "proceso de filtragem de pacotes")
 
 ---
 
-### **3. Tecnologias**
-
+3. **Tecnologias**
 Nesta seção são conceituadas as tecnologias escolhidas para a codificação da *interface*
 *Check Filter* que impacta diretamente em sua arquitetura e componentes gráficos empregados,
 pois devem dar suporte para configuração de regras que foram selecionadas para
 configuração no ambiente gráfico.
-
-
-### **3.1 *Netfilter***
-
+3.1 ***Netfilter***
 O *Kernel* do *Linux* é o núcleo do sistema operacional *GNU/Linux*, que serve de base
 para o desenvolvimento, execução de outros programas e controle de *hardware*. Portanto,
 trabalha entre a camada de usuário e periféricos de hardware. Em sua estrutura, o *kernel*
 possui um sub-sistema que permite a configuração das tabelas de *firewall*, denominado
 *Netfilter*.
-    Dentro de sua estrutura, existem três tabelas que são importantes para seu funcionamento:
+Dentro de sua estrutura, existem três tabelas que são importantes para seu funcionamento:
 *Filter*, *NAT* e *Meangle*. Estas tabelas organizam as cadeias de regras de acordo
 com sua estrutura e determinam a quais pacotes as regras serão aplicadas.
-
-### **3.2 *Apache***
-
+3.2 ***Apache***
 O Apache2 é um servidor *Web* livre e extremamente difundido entre os usuários
 *Linux*, e distribuído pela licença *GNU*. Seu código-fonte pode ser estudado e modificado
 por qualquer pessoa. Atualmente é o servidor *Web* mais utilizado no mundo.
-
-### **3.3 *PHP***
-
+3.3 ***PHP***
 PHP3 é acrônimo recursivo para *Hypertext* Preprocessor. É uma linguagem *open source*
 amplamente utilizada para desenvolvimento *Web*, pois pode ser embutida dentro do
 *HTML*.
-
-### **3.4 *HTML***
-
+3.4 ***HTML***
 HTML4 é a sigla para *HyperText Markup Language*. Consiste em uma linguagem de
 marcação de texto utilizada na produção de páginas *Web*. Basicamente, trata-se de um
 conjunto de *tags* que servem para definir a forma que o texto será exibido e outros elementos
 da página *HTML*.
-
-### **3.5 *CSS***
-
+3.5 ***CSS***
 *Cascading Style Sheets5* ´e uma linguagem utilizada para definir a apresentação de documentos
 que adotem em seu desenvolvimento, linguagem de marcação como o *HTML*.
 Sua maior vantagem é separar o formato e o conteúdo de um documento, fazendo uso em
 conjunto do *HTML* e *CSS*.
-
-### **3.6 *Bootstrap Studio***
-
+3.6 ***Bootstrap Studio***
 O Bootstrap Studio6 é um editor com ferramentas visuais para criação de páginas e *sites*
 responsivos. Possui um grande número de componentes internos, de fácil manipulação.
 
 ---
 
-### **4. Metodologia**
-
+4. **Metodologia**
 Alguns *dashboards* foram desenhados e analisados a fim de encontrar uma abordagem gráfica para ser empregada na arquitetura da *interface* e que cumprise o objetivo geral e específicos iniciais.
 Optou-se então por aplicar um modelo que utilizasse a lágica estrutural da arquitetura
 *Netfilter* que está organizada em trâs tabelas principais *FILTER*, *NAT*, e *MANGLE*.
@@ -158,7 +134,7 @@ Utilizando esse modelo, a aplicação foi criada seguindo essas divisões: três
 principais que correspondem a cada uma das tabelas *Netfilter* e cada uma destas
 *interfaces* disponibilizam meios de configuração que são específicos de determinada tabela.
 
-    Figura 2. Esquema de interfaces gráficas baseada nas tabelas Netfilter
+        Figura 2. Esquema de interfaces gráficas baseada nas tabelas Netfilter
 
  ![arquitetura](interface.png "arquiterura da interface")
 
@@ -185,8 +161,7 @@ estrutura gráfica construída no *Bootstrap* seja na alteração da estrutura o
 *interface*.
 
 ---
-### **5. Plataforma Proposta**
-
+5. **Plataforma Proposta**
 Empregando o uso das ferramentas mencionadas, este trabalho tem por finalidade oferecer
 um método alternativo na inserção das regras em um ambiente gráfico que realize
 a comunicação entre usuário-máquina, aplicando conhecimentos da Interacão Humano-
@@ -195,9 +170,7 @@ recursos nativos do *Linux*, mas capaz de simplificar o método nativo de implem
 de regras de pacotes.
 
 ---
-
-### **6. Resultados e Discussão**
-
+6. **Resultados e Discussão**
 A interface gráfica desenvolvida é o produto da interação de diferentes tecnologias difundidas
 e utilizadas em diferentes tipos de projetos. O estudo da ferramenta *Netfilter*
 foi de vital importância, pois o conhecimento sobre sua organização, aplicabilidades e
@@ -250,7 +223,7 @@ os seguintes modos de configuração:
 
  ![nat](nat.PNG "tabela nat")
 
- Para a configuração da *interface mangle*, Figura 6, foi disponibilizado o
+Para a configuração da *interface mangle*, Figura 6, foi disponibilizado o
 otimização de tempo de serviços (*TOS*) de entrada e de saída basta a especificação dos
 parâmetros, como o tipo de protocolo que se deseja priorizar na rede.
 
@@ -277,9 +250,8 @@ perdidas pois são alocadas em memória apóss sua configuração.
 
  ---
 
- ### **7. Conclusões e Trabalhos Futuros**
-
- O sistema de filtro de pacotes é uma das primeiras ferramentas acionadas quando o tráfego
+7. **Conclusões e Trabalhos Futuros**
+O sistema de filtro de pacotes é uma das primeiras ferramentas acionadas quando o tráfego
 de dados é estabelecido entre duas redes diferentes.
 Esse sistema pode ser configurado para filtrar os campos de dados mais úteis,
 contidos no cabeçalho, como o tipo de protocolo, endereço *IP*, porta *TCP/UDP* e são
@@ -303,7 +275,6 @@ na *interface* gráfica, bem como novas atualizações que possam ser lançadas,
 ferramenta mais completa.
 
 ---
-
 ### Referências
 
 Basile, C. and Lioy, A. (2015). *Analysis of application-layer filtering policies with application*
@@ -326,3 +297,9 @@ Purdy, G. N. (2004). *Linux iptables Pocket Reference: Firewalls, NAT & Accounti
 
 Silva, L. R. d. (2013). Estudo comparativo de soluções de *firewalls: Netfilter/iptables* e
 *cisco asa*.
+
+1. *Introdução*
+2. Item 2
+    1. Item 1
+   2. Item 2
+3. Item 3
