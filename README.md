@@ -19,7 +19,7 @@ desenvolver uma interface gráfica que auxilie a configuração das regras otimi
 o tempo de sua implantacão e melhorando seu gerenciamento.
 
 ---
-1. **Introdução**<p>
+1. **Introdução** 📝<p>
 Atualmente, na rede mundial de computadores, existem incontáveis processos em andamento
 que são sigilosos, ou seja, somente a origem e o destino destes dados e informacões
 devem ter conhecimento de seu conteúdo, no entanto, para que tais dados sejam protegidos
@@ -46,7 +46,7 @@ simples, amigável e intuitiva, esta apresentará opções de configuração din
 reduzindo assim o tempo de configuração de um _firewall iptables_.
 
 ---
-2. **Fundamentação Teórica**<p>
+2. **Fundamentação Teórica** 📚<p>
 Apresentam conceitos de autores sobre termos essenciais para o entendimento e 
 desenvolvimento do trabalho.<p>
 2.1. ***Firewall***<p>
@@ -83,11 +83,11 @@ com a configuração, serão bloqueados.<p>
 
         Figura 1. Visão global do processo de filtragem de pacotes.
 
-![fluxo](rede.PNG "proceso de filtragem de pacotes")
+![fluxo](rede.png "proceso de filtragem de pacotes")
 
 ---
 
-3. **Tecnologias**<p>
+3. **Tecnologias** 🔧<p>
 Nesta seção são conceituadas as tecnologias escolhidas para a codificação da *interface*
 *Check Filter* que impacta diretamente em sua arquitetura e componentes gráficos empregados,
 pois devem dar suporte para configuração de regras que foram selecionadas para
@@ -125,19 +125,19 @@ responsivos. Possui um grande número de componentes internos, de fácil manipul
 
 ---
 
-4. **Metodologia**<p>
+4. **Metodologia** ⚙️<p>
 Alguns *dashboards* foram desenhados e analisados a fim de encontrar uma abordagem gráfica para ser empregada na arquitetura da *interface* e que cumprise o objetivo geral e específicos iniciais.<p>
-Optou-se então por aplicar um modelo que utilizasse a lágica estrutural da arquitetura
+Após algumas avaliações decidiu-se por aplicar um modelo que utilizasse a lágica estrutural da arquitetura
 *Netfilter* que está organizada em trâs tabelas principais *FILTER*, *NAT*, e *MANGLE*.
 Onde cada tabela é responsável por gerenciar regras que são especáficas em cada uma.
 Utilizando esse modelo, a aplicação foi criada seguindo essas divisões: três *interfaces*
 principais que correspondem a cada uma das tabelas *Netfilter* e cada uma destas
-*interfaces* disponibilizam meios de configuração que são específicos de determinada tabela.
+*interfaces* disponibilizam meios de configuração que são específicos de determinada tabela.<p>
 A escolha das tecnologias para criação da *interface* foi um fator determinante
 em seu planejamento, pois deveriam oferecer o suporte necessário para a criação
 da arquitetura escolhida, oferecer componentes gráficos que possibilitassem opções de
 configuração rápida e intuitiva e principalmente que se fosse capaz de se comunicar com
-a plataforma *Netfilter* por meio do *iptables*.
+a plataforma *Netfilter* por meio do *iptables*.<p>
 Optou-se então por desenvolver uma *interface* local *host* utilizando o servidor
 *Web Apache* devido as suas funcionalidades e sua compatibilidade com outros recursos e
 principalmente, por sua capacidade de executar códigos em *PHP* e pelo seu alto nível de
@@ -157,10 +157,10 @@ estrutura gráfica construída no *Bootstrap* seja na alteração da estrutura o
 
 
         Figura 2. Esquema de interfaces gráficas baseada nas tabelas Netfilter
-![arquitetura](arquitetura.PNG "arquiterura da interface")
+![arquitetura](arquitetura.png "arquiterura da interface")
 
 ---
-5. **Plataforma Proposta**<p>
+5. **Plataforma Proposta** 💡<p>
 Empregando o uso das ferramentas mencionadas, este trabalho tem por finalidade oferecer
 um método alternativo na inserção das regras em um ambiente gráfico que realize
 a comunicação entre usuário-máquina, aplicando conhecimentos da Interacão Humano-
@@ -169,7 +169,7 @@ recursos nativos do *Linux*, mas capaz de simplificar o método nativo de implem
 de regras de pacotes.
 
 ---
-6. **Resultados e Discussão**<p>
+6. **Resultados e Discussão** 🏁<p>
 A interface gráfica desenvolvida é o produto da interação de diferentes tecnologias difundidas
 e utilizadas em diferentes tipos de projetos. O estudo da ferramenta *Netfilter*
 foi de vital importância, pois o conhecimento sobre sua organização, aplicabilidades e
@@ -249,7 +249,7 @@ perdidas pois são alocadas em memória apóss sua configuração.
 
  ---
 
-7. **Conclusões e Trabalhos Futuros**<p>
+7. **Conclusões e Trabalhos Futuros** ✅<p>
 O sistema de filtro de pacotes é uma das primeiras ferramentas acionadas quando o tráfego
 de dados é estabelecido entre duas redes diferentes.
 Esse sistema pode ser configurado para filtrar os campos de dados mais úteis,
@@ -274,7 +274,7 @@ na *interface* gráfica, bem como novas atualizações que possam ser lançadas,
 ferramenta mais completa.
 
 ---
-### Referências
+### Referências 📗
 
 Basile, C. and Lioy, A. (2015). *Analysis of application-layer filtering policies with application*
 *to http. IEEE/ACM Transactions on Networking (TON)*, 23(1):28–41.
