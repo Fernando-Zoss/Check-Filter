@@ -7,7 +7,7 @@
 
 > Status do Projeto: Em desenvolvimento :warning:
 
-### Resumo
+### Resumo :rocket:
 Acompanhando a expansão das redes computacionais, as tecnologias
 de segurança são indispensáveis na protecão das informações e recursos de
 *hardware* nas redes privadas. Uma técnica segura, estável e eficaz disponível
@@ -182,7 +182,7 @@ pertinentes de cada tabela. Na parte superior há um menu bar de fácil acesso p
 navegação entre todas as *interfaces* da ferramenta *Check Filter*, este componente está presente
 em todas as *interfaces*.
 
-    Figura 3. Interface home
+         Figura 3. Interface home
 
  ![home](home.PNG "tela home")
 
@@ -249,32 +249,37 @@ perdidas pois são alocadas em memória apóss sua configuração.
 
  ---
 
-7. **Conclusões e Trabalhos Futuros** ✅<p>
-O sistema de filtro de pacotes é uma das primeiras ferramentas acionadas quando o tráfego
-de dados é estabelecido entre duas redes diferentes.
-Esse sistema pode ser configurado para filtrar os campos de dados mais úteis,
-contidos no cabeçalho, como o tipo de protocolo, endereço *IP*, porta *TCP/UDP* e são
-alvos conhecidos em ataques, tais como a troca de endereços de origem de um pacote que
-pode ter dados sigilosos pelo endereço do próprio atacante.
-Os testes experimentais com a *interface* apresentaram resultados satisfatórios
-como meio de interação com a arquitetura *Netfilter* e os componentes incorporados na
-ferramenta são adequados para configurações do filtro de pacotes.
-A opção de configuraçãoo gráfica agrega simplicidade no processo de ajuste de
-regras permissivas ou restritivas. Pode ser usado em rotinas diárias de criação e edição
-de regras ou quando é necessário uma tomada de decisão rápida durante manutenção
-emergencial nas políticas de redes.
+ 7. **Desafios** :warning:
 Os principais desafios encontrados neste trabalho foram: realizar a interpretação
 do método de configuração de regras na forma escrita e migrá-los para um modelo gráfico,
 sem que houvesse perda de flexibilidade de opções nos parâmetros que geram os comandos
 para aplicação de regras e conceder as permissões necessárias para configurar comandos
 que um usuário comum (que não seja superusuário) possa utilizar o utilitário *iptables*
 para configuração de filtro de pacotes.
+
+
+ ---
+
+8. **Conclusões e Trabalhos Futuros** ✅<p>
+O sistema de filtro de pacotes é uma das primeiras ferramentas acionadas quando o tráfego
+de dados é estabelecido entre duas redes diferentes.<p>
+Esse sistema pode ser configurado para filtrar os campos de dados mais úteis,
+contidos no cabeçalho, como o tipo de protocolo, endereço *IP*, porta *TCP/UDP* e são
+alvos conhecidos em ataques, tais como a troca de endereços de origem de um pacote que,
+pode ter dados sigilosos pelo endereço do próprio atacante.<p>
+Os testes experimentais com a *interface* apresentaram resultados satisfatórios
+como meio de interação com a arquitetura *Netfilter* e os componentes incorporados na
+ferramenta são adequados para configurações do filtro de pacotes.<p>
+A opção de configuraçãoo gráfica agrega simplicidade no processo de ajuste de
+regras permissivas ou restritivas. Pode ser usado em rotinas diárias de criação e edição
+de regras ou quando é necessário uma tomada de decisão rápida durante manutenção
+emergencial nas políticas de redes.<p>
 Para trabalhos futuros, pretende-se agregar outras opções de configuração *iptables*
 na *interface* gráfica, bem como novas atualizações que possam ser lançadas, tornando a
 ferramenta mais completa.
 
 ---
-8. ### Desenvolvedor(s) :octocat:
+9. ### Desenvolvedor(s) :octocat:
 
 [<img src="https://avatars.githubusercontent.com/u/70179459?v=4" width=115> <br> <sub> Fernando Fernandes </sub>](https://github.com/Fernando-Zoss) |
 | :---: |
