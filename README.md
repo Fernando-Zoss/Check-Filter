@@ -274,6 +274,12 @@ na *interface* gráfica, bem como novas atualizações que possam ser lançadas,
 ferramenta mais completa.
 
 ---
+8. ### Desenvolvedor(s) :octocat:
+
+[<img src="https://avatars.githubusercontent.com/u/70179459?v=4" width=115> <br> <sub> Fernando Fernandes </sub>](https://github.com/Fernando-Zoss) |
+| :---: |
+
+---
 ### Referências 📗
 
 Basile, C. and Lioy, A. (2015). *Analysis of application-layer filtering policies with application*
