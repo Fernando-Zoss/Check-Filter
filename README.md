@@ -249,7 +249,7 @@ perdidas pois são alocadas em memória apóss sua configuração.
 
  ---
 
- 7. **Desafios** :warning:
+ 7. **Desafios** :warning: <p>
 Os principais desafios encontrados neste trabalho foram: realizar a interpretação
 do método de configuração de regras na forma escrita e migrá-los para um modelo gráfico,
 sem que houvesse perda de flexibilidade de opções nos parâmetros que geram os comandos
@@ -279,7 +279,7 @@ na *interface* gráfica, bem como novas atualizações que possam ser lançadas,
 ferramenta mais completa.
 
 ---
-9. ### Desenvolvedor(s) :octocat:
+9. ### Desenvolvedor(s) :octocat: 
 
 [<img src="https://avatars.githubusercontent.com/u/70179459?v=4" width=115> <br> <sub> Fernando Fernandes </sub>](https://github.com/Fernando-Zoss) |
 | :---: |
