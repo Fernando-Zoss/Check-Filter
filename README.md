@@ -1,11 +1,44 @@
-<h1 align="center"> Check Filter ✔️ </h1>
 
-<h1 align="center"> Interface Gráfica Auxiliar na Configuração de Filtros de Pacotes em um Ambiente Linux </h1>
+<p align="center">
+    <img src="cf.png" alt="Image" width="200" height="200" />
+</p>
 
-<img src="https://img.shields.io/static/v1?label=Linux&message=SO&color=brigth&style=plastic&logo=linux"/> <img src="https://img.shields.io/static/v1?label=Apache&message=v2.0&color=orange&style=plastic&logo=apache"/> <img src="https://img.shields.io/static/v1?label=PHP&message=v>=3.0&color=blue&style=plastic&logo=php"/> <img src="https://img.shields.io/static/v1?label=Bootstrap&message=framework&color=blueviolet&style=plastic&logo=bootstrap"/> <img src="https://img.shields.io/static/v1?label=HTML&message=v5.0&color=red&style=plastic&logo=html5"/> <img src="https://img.shields.io/static/v1?label=CSS&message=v3.0&color=yellow&style=plastic&logo=css3"/>
+
+<h3 align="center"> Interface Gráfica Auxiliar na Configuração de Filtros de Pacotes em um Ambiente Linux </h1>
+
+---
+
+<div align="center">
+<img src="https://img.shields.io/static/v1?label=Linux&message=SO&color=brigth&style=flat&logo=linux"/> <img src="https://img.shields.io/static/v1?label=Apache&message=v2.0&color=orange&style=flat&logo=apache"/> <img src="https://img.shields.io/static/v1?label=PHP&message=v>=3.0&color=blue&style=flat&logo=php"/> <img src="https://img.shields.io/static/v1?label=Bootstrap&message=framework&color=blueviolet&style=flat&logo=bootstrap"/> <img src="https://img.shields.io/static/v1?label=HTML&message=v5.0&color=red&style=flat&logo=html5"/> <img src="https://img.shields.io/static/v1?label=CSS&message=v3.0&color=yellow&style=flat&logo=css3"/>
+
+<img src="https://camo.githubusercontent.com/4e4a3b5c3e9c00501ec866e2f2466c5a6032f838aca5f2cf3b14450e39e8a2f0/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f72656163742532302d2532333230323332612e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d7265616374266c6f676f436f6c6f723d253233363144414642" height="25" data-canonical-src="https://img.shields.io/badge/react%20-%2320232a.svg?&amp;style=for-the-badge&amp;logo=react&amp;logoColor=%2361DAFB" style="max-width:100%;">
 <p>
 
-> Status do Projeto: Em desenvolvimento :warning:
+> 🚨 Status do Projeto: 🚧 Em desenvolvimento 🚧
+</div>
+
+### Índice
+   * [Resumo](#Resumo)
+   * [Introdução](#Introdução)
+   * [Fundamentação Teórica](#FundamentaçãoTeórica)
+      * [Firewall](#Firewall)
+      * [IPtables](#IPtables)
+      * [Filtro de Pacotes](#Filtrodepacotes)
+   * [Tecnologias](#tecnologias)
+      * [Apache](#Apache)
+      * [PHP](#PHP)
+      * [CSS](#CSS)
+      * [HTML](#HTML)
+      * [Bootstrap Studio](#BootstrapStudio)
+   * [Metodologia](#Metodologia)
+   * [Plataforma Proposta](#Plataformaproposta)
+   * [Resultados e Discussão](#ResultadoseDiscussão)
+   * [Desafios](#DesafioseConclusão)
+   * [Conclusão e Trabalhos Futuros](#TrabalhosFuturos)
+   * [Referências](#Plataformaproposta)
+   * [Autor](#Autor)
+---
+<!--te-->
 
 ### Resumo :rocket:
 Acompanhando a expansão das redes computacionais, as tecnologias
@@ -279,10 +312,9 @@ na *interface* gráfica, bem como novas atualizações que possam ser lançadas,
 ferramenta mais completa.
 
 ---
-9. ### Desenvolvedor(s) :octocat: 
+9. ### Autor :octocat: 
 
-[<img src="https://avatars.githubusercontent.com/u/70179459?v=4" width=115> <br> <sub> Fernando Fernandes </sub>](https://github.com/Fernando-Zoss) |
-| :---: |
+[<img src="https://avatars.githubusercontent.com/u/70179459?v=4" width=115> <br> <sub> Fernando Fernandes </sub>](https://github.com/Fernando-Zoss)
 
 ---
 ### Referências 📗
