@@ -119,9 +119,11 @@ com as regras implementadas, caso atendam ás condições
 de configuração, chegarão ao *IP* de destino. Caso os pacotes não estejam em conformidade
 com a configuração, serão bloqueados.<p>
 
-        Figura 1. Visão global do processo de filtragem de pacotes.
+<div align="center">
 
+        Figura 1. Visão global do processo de filtragem de pacotes.
 ![fluxo](rede.png "proceso de filtragem de pacotes")
+</div>
 
 ---
 
@@ -167,9 +169,11 @@ O *HTML* e o *CSS* permitiram toda a alteração necessária após a importaçã
 estrutura gráfica construída no *Bootstrap* seja na alteração da estrutura ou no estilo da
 *interface*.
 
+<div align="center">
 
         Figura 2. Esquema de interfaces gráficas baseada nas tabelas Netfilter
 ![arquitetura](arquitetura.png "arquiterura da interface")
+</div>
 
 ---
 6. **Plataforma Proposta** 💡<p>
