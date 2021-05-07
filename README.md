@@ -198,9 +198,12 @@ pertinentes de cada tabela. Na parte superior há um menu bar de fácil acesso p
 navegação entre todas as *interfaces* da ferramenta *Check Filter*, este componente está presente
 em todas as *interfaces*.
 
+<div align="center">
+
          Figura 3. Interface home
 
  ![home](home.PNG "tela home")
+ </div>
 
 Essa organização foi definida e implementada porque evita erros de configuração
 de parâmetros, de regras que podem ocorrer quando utilizado o método de configuração
@@ -212,10 +215,12 @@ As funcionalidades desta *interface* incluem:
 de portas especificando o protocolo que se deseja trabalhar;
 * Bloquear pacotes específicos que contenham um padrão de sintaxe (palavra);
 
+<div align="center">
 
         Figura 4. Interface Filter
 
  ![filter](filter.png "tabela filter")
+ </div>
 
 Como é possível identificar na Figura 4, quatro parâmetros (no caso de
 configuração de uma faixa de portas) ou apenas três (no caso de configuração de apenas
@@ -234,17 +239,23 @@ os seguintes modos de configuração:
 * Redirecionamento de portas, recurso utilizado para balanço de carga e *proxy* transparente;
 * Mascarar *ip* específico ou de uma rede;
 
+<div align="center">
+
         Figura 5. Interface NAT
 
  ![nat](nat.PNG "tabela nat")
+ </div>
 
 Para a configuração da *interface mangle*, Figura 6, foi disponibilizado o
 otimização de tempo de serviços (*TOS*) de entrada e de saída basta a especificação dos
 parâmetros, como o tipo de protocolo que se deseja priorizar na rede.
 
+<div align="center">
+
         Figura 6. Interface Mangle
 
  ![mangle](mangle.PNG "tabela mangle")
+ </div>
 
  A necessidade da *interface* de consulta, Figura 7, ocorreu na fase de testes da
 *interface filter* pois após a criação de regras pela plataforma *Check Filter* havia a necessidade
@@ -259,9 +270,12 @@ ações foram adicionadas na plataforma:
 Regras salvas são restauradas sempre que o *host* for iniciado, caso contrário serão
 perdidas pois são alocadas em memória apóss sua configuração.
 
+<div align="center">
+
         Figura 7. Interface de Consulta
 
  ![consulta](consultar.png "tela de consulta")
+ </div>
 
  ---
 
