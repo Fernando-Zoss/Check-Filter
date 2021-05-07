@@ -9,8 +9,10 @@
 ---
 
 <div align="center">
-    <img src="https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black"/> <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Linux-FCC62?style=for-the-badge&logo=linux&logoColor=white"/> <img src="https://img.shields.io/badge/Netfilter-FFA500?style=for-the-badge&logo=codeigniter&logoColor=white"/>
+    <img src="https://img.shields.io/badge/apache-E04E39?style=for-the-badge&logo=apache&logoColor=white"/>
     <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"/> 
+    <img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white"/>
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"/><p>
 
 🚨 Status do Projeto: 🚧 Em desenvolvimento 🚧
@@ -124,45 +126,14 @@ com a configuração, serão bloqueados.<p>
 ---
 
 4. **Tecnologias** 🔧<p>
-As seguintes ferramentas foram utilizadas na construção da *interface* CF:
-4.1 [Linux](https://www.linux.org/pages/download/)
-4.2 [Netfilter](https://www.netfilter.org/)
-4.3 [Apache](https://www.apache.org/)
-4.4 [PHP](https://www.php.net/)
-4.5 [HTML](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
-4.6 [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
-4.7 [Bootstrap](https://bootstrapstudio.io/)
-<!--
-4.1 ***Netfilter***<p>
-O *Kernel* do *Linux* é o núcleo do sistema operacional *GNU/Linux*, que serve de base
-para o desenvolvimento, execução de outros programas e controle de *hardware*. Portanto,
-trabalha entre a camada de usuário e periféricos de hardware. Em sua estrutura, o *kernel*
-possui um sub-sistema que permite a configuração das tabelas de *firewall*, denominado
-*Netfilter*.
-Dentro de sua estrutura, existem três tabelas que são importantes para seu funcionamento:
-*Filter*, *NAT* e *Meangle*. Estas tabelas organizam as cadeias de regras de acordo
-com sua estrutura e determinam a quais pacotes as regras serão aplicadas.<p>
-4.2 ***Apache***<p>
-O Apache2 é um servidor *Web* livre e extremamente difundido entre os usuários
-*Linux*, e distribuído pela licença *GNU*. Seu código-fonte pode ser estudado e modificado
-por qualquer pessoa. Atualmente é o servidor *Web* mais utilizado no mundo.<p>
-4.3 ***PHP***<p>
-PHP3 é acrônimo recursivo para *Hypertext* Preprocessor. É uma linguagem *open source*
-amplamente utilizada para desenvolvimento *Web*, pois pode ser embutida dentro do
-*HTML*.<p>
-4.4 ***HTML***<p>
-HTML4 é a sigla para *HyperText Markup Language*. Consiste em uma linguagem de
-marcação de texto utilizada na produção de páginas *Web*. Basicamente, trata-se de um
-conjunto de *tags* que servem para definir a forma que o texto será exibido e outros elementos
-da página *HTML*.<p>
-4.5 ***CSS***<p>
-*Cascading Style Sheets5* ´e uma linguagem utilizada para definir a apresentação de documentos
-que adotem em seu desenvolvimento, linguagem de marcação como o *HTML*.
-Sua maior vantagem é separar o formato e o conteúdo de um documento, fazendo uso em
-conjunto do *HTML* e *CSS*.<p>
-4.6 ***Bootstrap Studio***<p>
-O Bootstrap Studio6 é um editor com ferramentas visuais para criação de páginas e *sites*
-responsivos. Possui um grande número de componentes internos, de fácil manipulação. -->
+As seguintes ferramentas foram utilizadas na construção da *interface* CF:<p>
+4.1. [Linux](https://www.linux.org/pages/download/)<p>
+4.2. [Netfilter](https://www.netfilter.org/)<p>
+4.3. [Apache](https://www.apache.org/)<p>
+4.4. [PHP](https://www.php.net/)<p>
+4.5. [HTML](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)<p>
+4.6. [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)<p>
+4.7. [Bootstrap](https://bootstrapstudio.io/)<p>
 
 ---
 
@@ -211,7 +182,7 @@ de regras de pacotes.
 
 ---
 7. **Resultados e Discussão** 🏁<p>
-A interface gráfica desenvolvida é o produto da interação de diferentes tecnologias difundidas
+A *interface* gráfica desenvolvida é o produto da interação de diferentes tecnologias difundidas
 e utilizadas em diferentes tipos de projetos. O estudo da ferramenta *Netfilter*
 foi de vital importância, pois o conhecimento sobre sua organização, aplicabilidades e
 funcionamento são a base fundamental do protótipo que foi projetado.
