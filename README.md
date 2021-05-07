@@ -124,10 +124,15 @@ com a configuração, serão bloqueados.<p>
 ---
 
 4. **Tecnologias** 🔧<p>
-Nesta seção são conceituadas as tecnologias escolhidas para a codificação da *interface*
-*Check Filter* que impacta diretamente em sua arquitetura e componentes gráficos empregados,
-pois devem dar suporte para configuração de regras que foram selecionadas para
-configuração no ambiente gráfico.<p>
+As seguintes ferramentas foram utilizadas na construção da *interface* CF:
+4.1 [Linux](https://www.linux.org/pages/download/)
+4.2 [Netfilter](https://www.netfilter.org/)
+4.3 [Apache](https://www.apache.org/)
+4.4 [PHP](https://www.php.net/)
+4.5 [HTML](https://developer.mozilla.org/pt-BR/docs/Web/Guide/HTML/HTML5)
+4.6 [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+4.7 [Bootstrap](https://bootstrapstudio.io/)
+<!--
 4.1 ***Netfilter***<p>
 O *Kernel* do *Linux* é o núcleo do sistema operacional *GNU/Linux*, que serve de base
 para o desenvolvimento, execução de outros programas e controle de *hardware*. Portanto,
@@ -157,7 +162,7 @@ Sua maior vantagem é separar o formato e o conteúdo de um documento, fazendo u
 conjunto do *HTML* e *CSS*.<p>
 4.6 ***Bootstrap Studio***<p>
 O Bootstrap Studio6 é um editor com ferramentas visuais para criação de páginas e *sites*
-responsivos. Possui um grande número de componentes internos, de fácil manipulação.
+responsivos. Possui um grande número de componentes internos, de fácil manipulação. -->
 
 ---
 
