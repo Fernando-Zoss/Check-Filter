@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html style="background-color:#13252c;width:1200px;background-image:url(&quot;assets/img/web16002.png&quot;);">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelaFilter</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="height:620px;padding-top:20px;padding-left:50px;width:1100px;margin-top:47px;margin-left:125px;">
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="height:95px;">
+            <div class="container">
+                <a class="navbar-brand" href="inicio.html" style="color:#6b9830;">Check filter</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="height:63px;background-color:rgba(255,255,255,0.26);">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaFilter.html">filter</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaNat.html">nat</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaMangle.html">mangle</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Consulta.html">consultar</a></li>
+                    </ul>
+                    <span class="navbar-text actions"><a class="btn btn-light action-button" role="button" href="artigoCF.html" style="background-color:rgba(86,198,198,0);background-image:url(&quot;assets/img/cf3.png&quot;);width:64px;height:63px;padding-top:6px;padding-right:12px;padding-bottom:6px;padding-left:0px;"></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <form action="validartabelaFilter.php" method="post">
+
+    <div class="highlight-blue" style="background-color:#13252c;margin:72px;margin-left:-50px;height:460px;width:1100px;margin-top:14px;margin-bottom:0px;margin-right:0px;">
+        <h1 class="text-center" style="width:1000px;height:59px;margin-bottom:0px;padding-top:9px;margin-top:-49px;color:#fcfefb;background-color:#13252c;margin-left:55px;font-size:20px;">PAINEL DE CONTROLE - TABELA FILTER</h1>
+        <hr style="background-color:#ffffff;width:1000px;margin-left:49px;height:2px;margin-top:-13px;">
+        <div class="row" style="width:1062px;margin-left:0px;">
+            <div class="col" style="height:40px;margin-top:-2px;">
+                <p style="width:301px;color:#ffffff;margin-left:69px;font-size:12px;">SELECIONE O TIPO DE POLÍTICA</p>
+            </div>
+        </div>
+        <hr style="background-color:#ffffff;width:1000px;margin-left:49px;height:2px;margin-top:-9px;">
+
+        <div class="col" style="height:40px;margin-top:-58px;width:532px;margin-left:396px;padding-left:0px;">
+                <div class="form-check" style="width:150px;margin-left:167px;margin-top:10px;">
+
+                    <input name="ACCEPT" value="on" class="form-check-input" type="checkbox" id="formCheck-1" style="height:16px;width:22px;color:#6b9830;margin-top:5px;margin-left:-177px;padding-left:-38px;">
+                    <label class="form-check-label" for="formCheck-1" style="font-size:12px;height:24px;width:63px;margin-left:-131px;color:#ffffff;margin-top:-262px;padding-top:3px;">ACCEPT</label>
+                </div>
+
+            <div class="form-check" style="width:91px;margin-left:422px;margin-top:-25px;padding-left:26px;padding-top:0px;">
+
+                <input name="DROP" value="off" class="form-check-input" type="checkbox" id="formCheck-2" style="width:22px;height:16px;color:#6b9830;margin-left:-145px;margin-top:5px;">
+                <label class="form-check-label" for="formCheck-2" style="margin-left:-98px;font-size:12px;color:#ffffff;margin-top:-293px;">DROP</label>
+            </div>
+        </div>
+
+    <div class="row" style="margin-top:20px;height:30px;width:549px;margin-left:0px;padding-left:68px;margin-right:0px;">
+        <div class="col" style="height:30px;margin-top:0px;width:-41px;padding-left:0px;margin-left:0px;">
+            <p style="width:228px;font-size:12px;color:#ffffff;margin-left:16px;padding-top:5px;margin-top:0px;">CONFIGURAÇÃO DE PORTAS</p>
+
+            <div class="dropdown" style="width:130px;margin-left:340px;margin-top:-38px;padding-left:0px;padding-top:0px;">
+                    <select name="protocolo" class="btn btn-secondary dropdown-toggle" aria-expanded="false" data-toggle="dropdown" style="width:130px;background-color:#465765;height:25px;font-size:12px;padding-left:12px;padding-top:0px;padding-bottom:0px;margin-top:5px;margin-left:6px;color:#fff">PROTOCOLO
+                        <div class="dropdown-menu" role="menu">
+                            <option class="dropdown-item" style="width:130px;background-color:#465765;height:25px;font-size:12px;padding-left:12px;padding-top:0px;padding-bottom:0px;margin-top:5px;margin-left:6px;color:#fff">PROTOCOLO</option>
+                            <option value="TCP" class="dropdown-item" style="width:130px;background-color:#465765;height:25px;font-size:12px;padding-left:12px;padding-top:0px;padding-bottom:0px;margin-top:5px;margin-left:6px;color:#fff">TCP</option>
+                            <option value="UDP" class="dropdown-item" style="width:130px;background-color:#465765;height:25px;font-size:12px;padding-left:12px;padding-top:0px;padding-bottom:0px;margin-top:5px;margin-left:6px;color:#fff">UDP</option>
+                            <option value="ICMP" class="dropdown-item" style="width:130px;background-color:#465765;height:25px;font-size:12px;padding-left:12px;padding-top:0px;padding-bottom:0px;margin-top:5px;margin-left:6px;color:#fff">ICMP</option>
+                        </div>
+                    </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="col" style="width:315px;height:30px;margin-left:702px;margin-top:-25px;padding-top:-6px;padding-left:93px;">
+        <input name="portab" placeholder="porta" type="text" style="width:99px;height:25px;margin-left:-88px;margin-top:-16px;font-size:12px;background-color:#465765;color:#ffffff;">
+
+        <div class="dropdown" style="width:130px;margin-left:48px;margin-top:-25px;padding-left:0px;height:25px;">
+            <select name="acao" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="padding-left:12px;width:130px;background-color:#465765;height:25px;font-size:12px;padding-top:0px;padding-bottom:0px;margin-top:-4px;margin-left:-11px;">AÇÃO
+            <div class="dropdown-menu" role="menu">
+                 <option class="dropdown-item" style="padding-left:12px;width:130px;background-color:#465765;height:25px;font-size:12px;padding-top:0px;padding-bottom:0px;margin-top:-4px;margin-left:-11px;color:#fff">AÇÃO</option>
+                <option value="ACCEPT" class="dropdown-item" style="padding-left:12px;width:130px;background-color:#465765;height:25px;font-size:12px;padding-top:0px;padding-bottom:0px;margin-top:-4px;margin-left:-11px;color:#fff">ACCEPT</option>
+                <option value="DROP" class="dropdown-item" style="padding-left:12px;width:130px;background-color:#465765;height:25px;font-size:12px;padding-top:0px;padding-bottom:0px;margin-top:-4px;margin-left:-11px;color:#fff">DROP</option>
+            </div>
+            </select>
+        </div>
+    </div>
+
+    <div class="col" style="width:140px;height:30px;margin-left:564px;margin-top:-31px;">
+            <input name="portaa" placeholder="porta" type="text" style="width:99px;height:25px;margin-left:-8px;margin-top:2px;background-color:#465765;font-size:12px;color:#ffffff;">
+        <p style="width:7px;margin-left:106px;margin-top:-27px;">:</p>
+    </div>
+
+    <div class="row" style="width:371px;margin-left:0px;margin-top:156px;">
+        <div class="col" style="width:591px;height:31px;margin-top:39px;">
+            <p style="width:400px;font-size:12px;color:rgb(255,255,255);margin-left:70px;margin-top:6px;">BLOQUEAR PACOTES COM A PALAVRA</p>
+        </div>
+    </div>
+
+    <div class="col" style="width:-93px;height:30px;margin-left:373px;margin-top:-30px;padding-left:31px;">
+        <input name="palavra" type="text" placeholder="Digite aqui." style="margin-left:6px;margin-top:-97px;padding-top:0px;height:25px;width:130px;font-size:12px;padding-bottom:0px;background-color:#465765;color:#ffffff;">
+    </div>
+
+    <div class="dropdown" style="margin-left:570px;margin-top:-27px;width:133px;height:25px;">
+        <select name="algoritmo" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="width:130px;height:25px;margin-left:2px;margin-top:-6px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;">ALGORÍTIMO
+            <div class="dropdown-menu" role="menu">
+                <option class="dropdown-item" style="width:130px;height:25px;margin-left:2px;margin-top:-6px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">algorítimo</option>
+                <option value="bm" class="dropdown-item" style="width:130px;height:25px;margin-left:2px;margin-top:-6px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">bm</option>
+                
+            </div>
+        </select>
+    </div>
+
+    <div class="row" style="height:51px;margin-top:29px;padding-left:-55px;margin-left:31px;padding-top:-32px;width:1000px;">
+        <div class="col" style="margin-top:5px;width:530px;height:38px;">
+            <div class="btn-group" role="group" style="width:350px;padding-left:20px;margin-left:17px;">
+                
+                <button name="aplicar" class="btn btn-secondary" type="submit" style="width:140px;margin-left:0px;background-color:#6b9830;padding-top:0px;margin-top:0px;padding-bottom:0px;font-size:12px;height:25px;">APLICAR FILTRO(S)
+                </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    </form>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
