@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html style="background-color:#13252c;width:1200px;background-image:url(&quot;assets/img/web16002.png&quot;);">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelaNat</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+</head>
+
+<body style="height:620px;padding-top:20px;padding-left:50px;width:1100px;margin-top:47px;margin-left:125px;">
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="height:95px;">
+            <div class="container">
+                <a class="navbar-brand" href="inicio.html" style="color:#6b9830;">Check filter</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="height:63px;background-color:rgba(255,255,255,0.26);">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaFilter.html">filter</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaNat.html">nat</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaMangle.html">mangle</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Consulta.html">consultar</a></li>
+                    </ul>
+                    <span class="navbar-text actions"><a class="btn btn-light action-button" role="button" href="artigoCF.html" style="background-color:rgba(86,198,198,0);background-image:url(&quot;assets/img/cf3.png&quot;);width:64px;height:63px;padding-top:6px;padding-right:12px;padding-bottom:6px;padding-left:0px;"></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <form action="validartabelaNat.php" method="post">
+
+    <div class="highlight-blue" style="background-color:#13252c;margin:72px;margin-left:-50px;height:460px;width:1100px;margin-top:14px;margin-bottom:0px;margin-right:0px;color:#465765;">
+        <h1 class="text-center" style="width:1000px;height:59px;margin-bottom:0px;padding-top:9px;margin-top:-49px;color:#fcfefb;background-color:#13252c;margin-left:55px;font-size:20px;">PAINEL DE CONTROLE - TABELA NAT</h1>
+        <hr style="background-color:#ffffff;width:1000px;margin-left:49px;height:2px;margin-top:-13px;">
+        <div class="row" style="width:1062px;margin-left:0px;">
+            <div class="col" style="height:40px;margin-top:-2px;">
+                <p style="width:301px;color:#ffffff;margin-left:69px;font-size:12px;">SELECIONE O TIPO DE POLÍTICA</p>
+            </div>
+        </div>
+        <hr style="background-color:#ffffff;width:1000px;margin-left:49px;height:2px;margin-top:-9px;">
+
+        <div class="col" style="height:40px;margin-top:-58px;width:532px;margin-left:396px;padding-left:0px;">
+            <div class="form-check" style="width:150px;margin-left:167px;margin-top:10px;">
+                <input name="politica" value="ACCEPT" class="form-check-input" type="radio" id="formCheck-1" style="height:16px;width:22px;color:#6b9830;margin-top:5px;margin-left:-177px;padding-left:-38px;">
+                <input name="ACCEPT" value="on" class="form-check-input" type="checkbox" id="formCheck-1" style="height:16px;width:22px;color:#6b9830;margin-top:5px;margin-left:-177px;padding-left:-38px;">
+                    <label class="form-check-label" for="formCheck-1" style="font-size:12px;height:24px;width:63px;margin-left:-131px;color:#ffffff;margin-top:-262px;padding-top:3px;">ACCEPT</label>
+                </div>
+
+            <div class="form-check" style="width:91px;margin-left:422px;margin-top:-25px;padding-left:26px;padding-top:0px;">
+
+                <input name="DROP" value="off" class="form-check-input" type="checkbox" id="formCheck-2" style="width:22px;height:16px;color:#6b9830;margin-left:-145px;margin-top:5px;">
+                <label class="form-check-label" for="formCheck-2" style="margin-left:-98px;font-size:12px;color:#ffffff;margin-top:-293px;">DROP</label>
+            </div>
+        </div>
+
+    <div class="row" style="height:38px;margin-top:292px;padding-left:-55px;margin-left:31px;padding-top:-32px;width:1000px;">
+        <div class="col" style="margin-top:5px;width:530px;height:38px;">
+            <div class="btn-group" role="group" style="width:340px;padding-left:20px;margin-left:17px;">
+                
+                <button name="aplicar" class="btn btn-secondary" type="submit" style="width:141px;margin-left:-17px;background-color:#6b9830;padding-top:0px;margin-top:0px;padding-bottom:0px;font-size:12px;height:25px;">APLICAR FILTRO(S)
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="col" style="width:403px;height:30px;margin-left:265px;margin-top:-288px;">
+        <input name="niporigem" type="text" placeholder="IP do host/rede" style="color:#ffffff;background-color:#465765;width:150px;margin-left:-16px;font-size:14px;margin-top:1px;">
+
+        <div class="dropdown" style="width:105px;margin-left:150px;margin-top:-28px;margin-right:0px;height:30px;padding-top:0px;">
+            <select name="interface" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="height:27px;width:105px;margin-left:-1px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;">interface
+                <div class="dropdown-menu dropdown-menu-left" role="menu">
+                    <option class="dropdown-item" style="height:27px;width:105px;margin-left:-1px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;color:#fff">Interface</option>
+                    <option value="eth0" class="dropdown-item" style="height:27px;width:105px;margin-left:-1px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;color:#fff">eth0</option>
+                    <option value="eth1" class="dropdown-item" style="height:27px;width:105px;margin-left:-1px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;color:#fff">eth1</option>
+                </div>
+            </select>
+        </div>
+
+    <div class="dropdown" style="width:105px;margin-left:255px;margin-top:-30px;margin-right:0px;height:30px;padding-top:0px;">
+        <select name="nat" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="height:27px;width:105px;margin-left:15px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;">Nat
+            <div class="dropdown-menu dropdown-menu-left" role="menu">
+                <option class="dropdown-item" style="height:27px;width:105px;margin-left:15px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;color:#fff">Nat</option>
+                <option value="SNAT" class="dropdown-item" style="height:27px;width:105px;margin-left:15px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;color:#fff">SNAT</option>
+                <option value="DNAT" class="dropdown-item" style="height:27px;width:105px;margin-left:15px;margin-top:0px;background-color:#465765;font-size:14px;padding-top:0px;padding-bottom:0px;color:#fff">DNAT</option>
+            </div>
+        </select>
+    </div>
+    </div>
+
+    <div class="col" style="width:352px;margin-left:669px;height:30px;margin-top:-31px;">
+        <input name="fipinicial" type="text" placeholder="Faixa IP inicial" style="color:#ffffff;background-color:#465765;width:150px;margin-left:-15px;margin-top:0px;font-size:14px;">
+        <input name="fipfinal" type="text" placeholder="Faixa de IP final" style="color:#ffffff;background-color:#465765;width:150px;margin-left:15px;margin-top:2px;font-size:14px;padding-left:0px;">
+    </div>
+
+    <div class="col" style="width:723px;margin-left:264px;margin-top:96px;">
+        <input name="mascip" type="text" placeholder="IP da rede/host." style="background-color:#465765;width:150px;font-size:14px;color:#ffffff;height:27px;margin-left:-15px;">
+    </div>
+
+        <div class="col" style="width:303px;margin-left:264px;margin-top:-90px;">
+            <input name="rediporigem" type="text" placeholder="IP do host." style="background-color:#465765;width:150px;font-size:14px;color:#ffffff;height:27px;margin-left:-15px;">
+            <input name="redporigem" type="text" placeholder="porta" style="background-color:#465765;width:113px;font-size:14px;color:#ffffff;height:27px;margin-left:15px;">
+        </div>
+
+        <div
+            class="col" style="margin-top:-162px;color:#ffffff;width:225px;height:50px;padding-top:-164px;">
+            <div class="row" style="width:225px;margin-left:-14px;margin-top:63px;">
+                <div class="col" style="margin-left:23px;">
+                    <p style="margin-top:16px;font-size:12px;color:#ffffff;margin-left:72px;">SNAT / DNAT</p>
+                </div>
+                <div class="col" style="width:182px;margin-top:61px;height:50px;margin-left:-10px;">
+                    <p style="width:182px;margin-top:-34px;margin-left:73px;color:#ffffff;font-size:12px;">REDIRECIONAR PORTA</p>
+                </div>
+            </div>
+            </div>
+            <div class="col" style="margin-top:74px;color:#ffffff;width:224px;height:50px;">
+                <div class="row" style="width:225px;margin-left:-15px;">
+                    <div class="col" style="width:871px;margin-top:0px;margin-left:-1px;">
+                        <p style="width:99px;margin-top:16px;margin-left:88px;color:#ffffff;font-size:12px;">MASQUERADING</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col" style="width:337px;margin-left:566px;margin-top:-102px;">
+                <input name="redipdestino" type="text" placeholder="IP do host." style="background-color:#465765;width:150px;font-size:14px;color:#ffffff;height:27px;margin-left:-23px;">
+                <input name="redpdestino" type="text" placeholder="porta" style="background-color:#465765;width:113px;font-size:14px;color:#ffffff;height:27px;margin-left:17px;">
+            </div>
+            </div>
+            </form>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+            <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
