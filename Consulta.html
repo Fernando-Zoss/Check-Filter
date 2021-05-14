@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html style="background-color:#13252c;width:1200px;background-image:url(&quot;assets/img/web16002.png&quot;);">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>realizarConsulta</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/styles.min.css">
+    <script type="text/javascript https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <!--https://www.youtube.com/watch?v=ko3cBzW-q8o-->
+    <!--   <script type="text/javascript">
+                    function consulta() 
+                    {
+                        $.ajax({url:"validarCFilter.php",success:function(result)
+                            {
+                                $("div").text(result);
+                            }
+                        })             
+                   }
+            </script>-->
+</head>
+
+<body style="height:620px;padding-top:20px;padding-left:50px;width:1100px;margin-top:47px;margin-left:125px;">
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md navigation-clean-button" style="height:95px;">
+            <div class="container">
+                <a class="navbar-brand" href="inicio.html" style="color:#6b9830;">Check filter</a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navcol-1" style="height:63px;background-color:rgba(255,255,255,0.26);">
+                    <ul class="nav navbar-nav mr-auto">
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaFilter.html">filter</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaNat.html">nat</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="tabelaMangle.html">mangle</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="Consulta.html">consultar</a></li>
+                    </ul>
+                    <span class="navbar-text actions"> <a class="btn btn-light action-button" role="button" href="artigoCF.html" style="background-color:rgba(86,198,198,0);background-image:url(&quot;assets/img/cf3.png&quot;);width:64px;height:63px;padding-top:6px;padding-right:12px;padding-bottom:6px;padding-left:0px;"></a>
+                    </span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="highlight-blue" style="background-color:#13252c;margin:62px;margin-left:-50px;height:460px;width:1100px;margin-top:8px;margin-bottom:0px;margin-right:0px;">
+        <h1 class="text-center" style="width:1000px;height:59px;margin-bottom:0px;padding-top:10px;margin-top:-48px;color:#ffffff;background-color:#13252c;margin-left:55px;font-size:20px;">PAINEL DE CONTROLE - CONSULTA</h1>
+        <hr style="background-color:#ffffff;width:1000px;margin-left:49px;height:2px;margin-top:-13px;">
+    </div>
+
+    <div class="highlight-blue" style="background-color:#ffffff;margin:62px;margin-left:159px;height:445px;width:675px;margin-top:-410px;margin-bottom:0px;margin-right:0px;">
+
+
+    </div>
+
+    <div class="col" style="width:169px;margin-top:-434px;margin-left:-10px;height:388px;">
+        <p class="text-center" style="color:#ffffff;">Consultar tabela</p>
+
+        <form action="cFilter.php" method="POST">
+            <button name="cFilter" class="btn btn-secondary" type="submit" style="width:140px;height:25px;background-color:#37434d;padding-top:0px;padding-bottom:0px;font-size:12px;margin-top:-1px;">FILTER</button>
+        </form>
+
+        <form action="cNat.php" method="POST">
+            <button name="cNat" class="btn btn-secondary" type="submit" style="width:140px;height:25px;background-color:#37434d;padding-top:0px;padding-bottom:0px;font-size:12px;margin-top:-1px;">NAT</button>
+        </form>
+
+        <form action="cMangle.php" method="POST">  
+            <button name="cMangle" class="btn btn-secondary" type="submit" style="width:140px;height:25px;background-color:#37434d;padding-top:0px;padding-bottom:0px;font-size:12px;margin-top:-1px;">MANGLE</button>
+        </form>
+
+        <form action="validarConsulta.php" method="POST">
+
+        <p class="text-center" style="color:#ffffff;margin-top:38px;">Limpar tabela</p>
+            <button name="lFilter" class="btn btn-secondary" type="submit" style="width:140px;height:25px;background-color:#a73129;padding-top:0px;padding-bottom:0px;font-size:12px;margin-top:0px;">FILTER</button>
+            <button name="lNat" class="btn btn-secondary" type="submit" style="width:140px;height:25px;background-color:#a73129;padding-top:0px;padding-bottom:0px;font-size:12px;">NAT
+            </button>
+            <button name="lMangle" class="btn btn-secondary" type="submit" style="width:140px;height:25px;background-color:#a73129;padding-top:0px;padding-bottom:0px;font-size:12px;margin-top:-1px;">MANGLE</button>
+            <button name="lTodas" class="btn btn-secondary" type="submit" style="width:140px;height:25px;background-color:#a73129;padding-top:0px;padding-bottom:0px;font-size:12px;margin-top:-1px;">TODAS</button>
+    </div>
+
+    <div class="col" style="width:169px;margin-top:-388px;margin-left:834px;height:388px;">
+        <p class="text-center" style="color:#ffffff;width:168px;margin-left:-10px;font-size:14px;">Apagar regra específica</p>
+        <div class="dropdown">
+
+            <select name="tabela" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;">
+                <div class="dropdown-menu" role="menu">
+                    <option class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">Tabela</option>
+                    <option value="filter" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">FILTER</option>
+                    <option value="nat" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">NAT</option>
+                    <option value="mangle" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">MANGLE</option>
+                </div>
+            </select>
+        </div>
+
+        <div class="dropdown">
+            <select name="chain" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-expanded="false" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;">Chain
+                <div class="dropdown-menu" role="menu">
+                    <option class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;">Chain</option>
+                    <option value="INPUT" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">INPUT</option>
+                    <option value="OUTPUT" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">OUTPUT</option>
+                    <option value="FORWARD" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">FORWARD</option>
+                    <option value="PREROUTING" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">PREROUTING</option>
+                    <option value="POSTROUTING" class="dropdown-item" style="width:140px;height:25px;background-color:#465765;padding-top:0px;padding-bottom:0px;font-size:14px;color:#fff">POSTROUTING</option>
+                </div>
+            </select>
+        </div>
+
+        <input name="linha" type="text" placeholder="Nº da linha" align="center" style="width:140px;height:25px;background-color:#465765;color:#ffffff;font-size:14px;">
+            
+        <button name="excluir" class="btn btn-secondary" type="submit" style="width:140px;height:25px;padding-right:0px;padding-left:0px;padding-bottom:0px;padding-top:0px;background-color:#a73129;font-size:12px;margin-top:-1px;">EXCLUIR</button>
+
+        <button name="salvar" class="btn btn-secondary" type="submit" style="width:140px;height:25px;padding-top:0px;padding-bottom:0px;background-color:#6b9830;margin-top:106px;font-size:12px;margin-left:0px;">SALVAR</button>
+        </form>
+
+        <form action="regrasSalvas.php" method="POST">
+        <button name="visualisar" class="btn btn-secondary" type="submit" style="width:140px;height:25px;padding-top:0px;padding-bottom:0px;background-color:#6b9830;margin-top:-1px;font-size:12px;">VISUALISAR</button>
+        </form>
+    
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
+    <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
